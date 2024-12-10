@@ -1,18 +1,15 @@
 # SI_Crystal_Melting
 
 The list of folders and files included is as below.
- * Configuration files for simulations: (coordinates of nitromethane and acetic acid): *.gro
-   - folder name: CONFIG\_{REFCODE}\_{FORCEFIELD}\_init 
+ * Configuration files for GROMACS simulations: (coordinates of nitromethane and acetic acid): *.gro
+   - folder name: CONFIG\_{REFCODE}\_{FORCEFIELD}\_INIT
    - file name:
        {REFCODE}\_{FORCEFIELD}\_{XYZ}\_{TEMP}K\_init.gro
 
-     REFCODE: NTROMA01 for nitromethane or ACETAC07 for acetic acid
-     
-     FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS 1.14\*CM1A, OPLS 1.14\*CM1A-LBCC
-
-     XYZ: x or y or z for x-oriented or y-oriented, or z-oriented systems
-
-     TEMP: within temperature ranges as shown in our publication
+	REFCODE: NTROMA01 for nitromethane or ACETAC07 for acetic acid
+	FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS 1.14\*CM1A, OPLS 1.14\*CM1A-LBCC
+	XYZ: x or y or z for x-oriented or y-oriented, or z-oriented systems
+	TEMP: temperature values within the ranges considered in our publication
      
  * MD parameters: (parameters for MD simulation): *.mdp
    - folder name: mdp_NTROMA01_CGenFF_init
