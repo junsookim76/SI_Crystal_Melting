@@ -1,15 +1,61 @@
 # SI_Crystal_Melting
 
 The list of folders and files included is as below.
- * Configuration files for simulations: (coordinates of DNA, water, ions)
-   - folder name: config_prod
+ * Configuration files for simulations: (coordinates of nitromethane and acetic acid): *.gro
+   - folder name: config_NTROMA01_CGenFF_init
    - files:
-       circ(70,76,82,90)_lin32_set(1,2,3,4)init.gro
-       circ(70,76,82,90)_lin32_set(1,2,3,4)final.gro
- * MD parameters: (parameters for MD simulation)
-   - folder name: mdp
+       NTROMA01_CGenFF_x_200K_init.gro
+       NTROMA01_CGenFF_x_205K_init.gro
+       NTROMA01_CGenFF_x_210K_init.gro
+       NTROMA01_CGenFF_x_215K_init.gro
+       NTROMA01_CGenFF_x_220K_init.gro
+       NTROMA01_CGenFF_y_200K_init.gro
+       NTROMA01_CGenFF_y_205K_init.gro
+       NTROMA01_CGenFF_y_210K_init.gro
+       NTROMA01_CGenFF_y_215K_init.gro
+       NTROMA01_CGenFF_y_220K_init.gro
+       NTROMA01_CGenFF_z_200K_init.gro
+       NTROMA01_CGenFF_z_205K_init.gro
+       NTROMA01_CGenFF_z_210K_init.gro
+       NTROMA01_CGenFF_z_215K_init.gro
+       NTROMA01_CGenFF_z_220K_init.gro
+   - folder name: config_NTROMA01_GAFF_init
    - files:
-       grompp.mdp
+       NTROMA01_GAFF_x_200K_init.gro
+       NTROMA01_GAFF_x_205K_init.gro
+       NTROMA01_GAFF_x_210K_init.gro
+       NTROMA01_GAFF_x_215K_init.gro
+       NTROMA01_GAFF_x_220K_init.gro
+       NTROMA01_GAFF_y_200K_init.gro
+       NTROMA01_GAFF_y_205K_init.gro
+       NTROMA01_GAFF_y_210K_init.gro
+       NTROMA01_GAFF_y_215K_init.gro
+       NTROMA01_GAFF_y_220K_init.gro
+       NTROMA01_GAFF_z_200K_init.gro
+       NTROMA01_GAFF_z_205K_init.gro
+       NTROMA01_GAFF_z_210K_init.gro
+       NTROMA01_GAFF_z_215K_init.gro
+       NTROMA01_GAFF_z_220K_init.gro
+       
+ * MD parameters: (parameters for MD simulation): *.mdp
+   - folder name: mdp_NTROMA01_CGenFF_init
+   - files:
+       NTROMA01_CGenFF_x_200K_grompp.mdp
+       NTROMA01_CGenFF_x_205K_grompp.mdp
+       NTROMA01_CGenFF_x_210K_grompp.mdp
+       NTROMA01_CGenFF_x_215K_grompp.mdp
+       NTROMA01_CGenFF_x_220K_grompp.mdp
+       NTROMA01_CGenFF_y_200K_grompp.mdp
+       NTROMA01_CGenFF_y_205K_grompp.mdp
+       NTROMA01_CGenFF_y_210K_grompp.mdp
+       NTROMA01_CGenFF_y_215K_grompp.mdp
+       NTROMA01_CGenFF_y_220K_grompp.mdp
+       NTROMA01_CGenFF_z_200K_grompp.mdp
+       NTROMA01_CGenFF_z_205K_grompp.mdp
+       NTROMA01_CGenFF_z_210K_grompp.mdp
+       NTROMA01_CGenFF_z_215K_grompp.mdp
+       NTROMA01_CGenFF_z_220K_grompp.mdp
+     
  * Topology inputs: (topology files - *.topol, *.itp)
    - folder name: topology
    - files and subfolders:
