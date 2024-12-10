@@ -2,8 +2,8 @@
 
 The list of folders and files included is as below.
 ## Configuration files for GROMACS simulations: *.gro
-   - folder name: CONFIG\_INIT\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
-   - file name:
+   - **folder name**: CONFIG\_INIT\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
+   - **file name**:
        {REFCODE}\_{FORCEFIELD}\_{XYZ}\_{TEMP}K\_init.gro
 
 	- REFCODE: NTROMA01 (for nitromethane) or ACETAC07 (for acetic acid)
@@ -17,8 +17,8 @@ The list of folders and files included is as below.
  	- example file: NTROMA01_CGenFF_x_200K_init.gro
      
 ## MD simulation parameters: *.mdp
-   - folder name: MDP\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
-   - file name:
+   - **folder name**: MDP\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
+   - **file name**:
        {REFCODE}\_{FORCEFIELD}\_{XYZ}\_{TEMP}K\_grompp.mdp
 
 	- example folder: MDP_NTROMA01_CGenFF_VLSV
