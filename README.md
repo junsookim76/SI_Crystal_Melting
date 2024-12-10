@@ -39,6 +39,13 @@ The list of folders and files included is as below.
        circ(70,76,82,90)_lin32_set(1,2,3,4)_init_DNAion.gro 
  	     circ(70,76,82,90)_lin32_set(1,2,3,4)_DNAion_dt10ns.xtc
 
+## Potential energy as a function of time: *.xvg 
+  * Configuration files for analysis and visualization: (coordinates of DNA and ions)
+    - folder name: trajectory_for_visualization
+    - files:
+       circ(70,76,82,90)_lin32_set(1,2,3,4)_init_DNAion.gro 
+ 	     circ(70,76,82,90)_lin32_set(1,2,3,4)_DNAion_dt10ns.xtc
+
 ## Movies
   * Movies: (movie of one trajectory for each DNA rotaxane)
     - folder name: movie_files
