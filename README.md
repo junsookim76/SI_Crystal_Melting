@@ -1,52 +1,47 @@
 # SI_Crystal_Melting
 
 The list of folders and files included is as below.
- * Configuration files for GROMACS simulations: (coordinates of nitromethane and acetic acid): *.gro
-   - folder name: CONFIG\_{REFCODE}\_{FORCEFIELD}\_INIT
+## Configuration files for GROMACS simulations: *.gro
+   - folder name: CONFIG\_INIT\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
    - file name:
        {REFCODE}\_{FORCEFIELD}\_{XYZ}\_{TEMP}K\_init.gro
 
-	REFCODE: NTROMA01 for nitromethane or ACETAC07 for acetic acid
-	FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS 1.14\*CM1A, OPLS 1.14\*CM1A-LBCC
-	XYZ: x or y or z for x-oriented or y-oriented, or z-oriented systems
-	TEMP: temperature values within the ranges considered in our publication
+	- REFCODE: NTROMA01 (for nitromethane) or ACETAC07 (for acetic acid)
+	- FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS 1.14*CM1A, OPLS 1.14*CM1A-LBCC
+ 	- SYSTEM: S (for solid alone), LS (for liquid/solid), VLSV (for vapor/liquid/solid/vapor), 
+  		VSV (for vapor/solid/vapor), CONTHEAT (for continuous heating)
+	- XYZ: x (for x-oriented systems) or y (for y-oriented systems), or z (for z-oriented systems)
+	- TEMP: temperature values within the ranges considered in our publication
+
+	- example folder: CONFIG_INIT_NTROMA01_CGenFF_VLSV
+ 	- example file: NTROMA01_CGenFF_x_200K_init.gro
      
- * MD parameters: (parameters for MD simulation): *.mdp
-   - folder name: mdp_NTROMA01_CGenFF_init
-   - files:
-       NTROMA01_CGenFF_x_200K_grompp.mdp
-       NTROMA01_CGenFF_x_205K_grompp.mdp
-       NTROMA01_CGenFF_x_210K_grompp.mdp
-       NTROMA01_CGenFF_x_215K_grompp.mdp
-       NTROMA01_CGenFF_x_220K_grompp.mdp
-       NTROMA01_CGenFF_y_200K_grompp.mdp
-       NTROMA01_CGenFF_y_205K_grompp.mdp
-       NTROMA01_CGenFF_y_210K_grompp.mdp
-       NTROMA01_CGenFF_y_215K_grompp.mdp
-       NTROMA01_CGenFF_y_220K_grompp.mdp
-       NTROMA01_CGenFF_z_200K_grompp.mdp
-       NTROMA01_CGenFF_z_205K_grompp.mdp
-       NTROMA01_CGenFF_z_210K_grompp.mdp
-       NTROMA01_CGenFF_z_215K_grompp.mdp
-       NTROMA01_CGenFF_z_220K_grompp.mdp
-     
- * Topology inputs: (topology files - *.topol, *.itp)
-   - folder name: topology
+## MD simulation parameters: *.mdp
+   - folder name: MDP\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
+   - file name:
+       {REFCODE}\_{FORCEFIELD}\_{XYZ}\_{TEMP}K\_grompp.mdp
+
+	- example folder: MDP_NTROMA01_CGenFF_VLSV
+ 	- example file: NTROMA01_CGenFF_x_200K_grompp.mdp
+
+## Topology inputs: (topology files - *.topol, *.itp)
+   - folder name: TOPOLOGY\_{REFCODE}\_{FORCEFIELD}
    - files and subfolders:
        circ(70,76,82,90)_lin32_topol.top
        topol_(circular, linear)_DNA_chain_(A,B).itp 
    - files for weak restraints in each subfolders
-       posre_linear_DNA_chain_(A3,B3).itp 
+       posre_linear_DNA_chain_(A3,B3).itp
+     
+## Energy outputs for calculation of potential energy: *.edr 
   * Configuration files for analysis and visualization: (coordinates of DNA and ions)
     - folder name: trajectory_for_visualization
     - files:
        circ(70,76,82,90)_lin32_set(1,2,3,4)_init_DNAion.gro 
- 	     circ(70,76,82,90)_lin32_set(1,2,3,4)_DNAion_dt10ns.xtc 
+ 	     circ(70,76,82,90)_lin32_set(1,2,3,4)_DNAion_dt10ns.xtc
+
+## Movies
   * Movies: (movie of one trajectory for each DNA rotaxane)
     - folder name: movie_files
     - files:
-		   rotax_70_3.mpg 
-		   rotax_76_3.mpg 
-		   rotax_82_1.mpg 
- 		   rotax_90_1.mpg
+
     - We've observed that "QuickTime Player" on Mac might encounter difficulties in playing the movies. We suggest experimenting with alternative media players, such as GOM Player or VLC Media Player.
