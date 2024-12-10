@@ -1,5 +1,11 @@
 # SI_Crystal_Melting
 
+>Supporting Data 
+>
+>for "Melting point prediction of organic crystals using direct molecular dynamics simulations" 
+>
+>by Chi, Han, Won, and Kim (2025)
+
 The list of folders and files included is as below.
 ## Configuration files for GROMACS simulations: *.gro
    - **folder name**: CONFIG\_INIT\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
