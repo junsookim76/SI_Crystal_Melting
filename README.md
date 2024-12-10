@@ -2,24 +2,25 @@
 
 The list of folders and files included is as below.
  * Configuration files for simulations: (coordinates of nitromethane and acetic acid): *.gro
-   - folder name: config_NTROMA01_CGenFF_init
+   - folder name: config_NTROMA01_CGenFF_init (CGenFF for nitromethane)
    - files:
-       NTROMA01_CGenFF_x_200K_init.gro
-       NTROMA01_CGenFF_x_205K_init.gro
-       NTROMA01_CGenFF_x_210K_init.gro
-       NTROMA01_CGenFF_x_215K_init.gro
-       NTROMA01_CGenFF_x_220K_init.gro
-       NTROMA01_CGenFF_y_200K_init.gro
-       NTROMA01_CGenFF_y_205K_init.gro
-       NTROMA01_CGenFF_y_210K_init.gro
-       NTROMA01_CGenFF_y_215K_init.gro
-       NTROMA01_CGenFF_y_220K_init.gro
-       NTROMA01_CGenFF_z_200K_init.gro
-       NTROMA01_CGenFF_z_205K_init.gro
-       NTROMA01_CGenFF_z_210K_init.gro
-       NTROMA01_CGenFF_z_215K_init.gro
-       NTROMA01_CGenFF_z_220K_init.gro
-   - folder name: config_NTROMA01_GAFF_init
+     
+       NTROMA01_CGenFF_x_200K_init.gro/
+       NTROMA01_CGenFF_x_205K_init.gro/
+       NTROMA01_CGenFF_x_210K_init.gro/
+       NTROMA01_CGenFF_x_215K_init.gro/
+       NTROMA01_CGenFF_x_220K_init.gro/
+       NTROMA01_CGenFF_y_200K_init.gro/
+       NTROMA01_CGenFF_y_205K_init.gro/
+       NTROMA01_CGenFF_y_210K_init.gro/
+       NTROMA01_CGenFF_y_215K_init.gro/
+       NTROMA01_CGenFF_y_220K_init.gro/
+       NTROMA01_CGenFF_z_200K_init.gro/
+       NTROMA01_CGenFF_z_205K_init.gro/
+       NTROMA01_CGenFF_z_210K_init.gro/
+       NTROMA01_CGenFF_z_215K_init.gro/
+       NTROMA01_CGenFF_z_220K_init.gro/
+   - folder name: config_NTROMA01_GAFF_init (GAFF for nitromethane)
    - files:
        NTROMA01_GAFF_x_200K_init.gro
        NTROMA01_GAFF_x_205K_init.gro
