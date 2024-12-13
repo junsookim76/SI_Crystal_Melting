@@ -1,4 +1,4 @@
-<img width="1710" alt="스크린샷 2024-12-13 오후 12 56 46" src="https://github.com/user-attachments/assets/c3a1fce7-1cfc-41ef-8c10-a5226104c10a" /># SI_Crystal_Melting
+># SI_Crystal_Melting
 
 >Supporting Data 
 >
