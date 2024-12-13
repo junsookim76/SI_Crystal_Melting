@@ -1,4 +1,4 @@
-# SI_Crystal_Melting
+<img width="1710" alt="스크린샷 2024-12-13 오후 12 56 46" src="https://github.com/user-attachments/assets/c3a1fce7-1cfc-41ef-8c10-a5226104c10a" /># SI_Crystal_Melting
 
 >Supporting Data 
 >
@@ -33,11 +33,11 @@ The list of folders and files included is as below.
 ## Topology inputs: *.topol, *.itp, *.ff
    - **folder name**: TOPOLOGY\_{REFCODE}\_{FORCEFIELD}
    - **file name for CGenFF NTROMA01**:
-
-     	topol.top / ntma.itp / ntma.prm / charmm36-jul2022.ff
-
+   - topol.top / ntma.itp / ntma.prm / charmm36-jul2022.ff
    - **file name for CGenFF ACETAC07**:
+   - topol.top / charmm36.ff
    - **file name for GAFF**:
+   - topol.top / NTROMA01_SINGLE_GMX_gaff.itp 
    - **file name for GAFF2**:
    - **file name for OPLS 1.14*CM1A**:
    - **file name for OPLS 1.14*CM1A-LBCC**:
