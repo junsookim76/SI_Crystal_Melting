@@ -37,10 +37,13 @@ The list of folders and files included is as below.
    - **file name for CGenFF ACETAC07**:
    - topol.top / charmm36.ff
    - **file name for GAFF**:
-   - topol.top / NTROMA01_SINGLE_GMX_gaff.itp 
+   - topol.top / gaff.itp 
    - **file name for GAFF2**:
+   - topol.top / gaff2.itp   
    - **file name for OPLS 1.14*CM1A**:
+   - topol.top / opls_cm1a.itp
    - **file name for OPLS 1.14*CM1A-LBCC**:
+   - topol.top / opls_lbcc.itp
      
 ## Energy outputs for calculation of potential energy: *.edr 
    - **folder name**: ENER\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
