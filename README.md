@@ -20,7 +20,7 @@ The list of folders and files included is as below.
 	- TEMP: temperature values within the ranges considered in our publication
 
 	- example folder: CONFIG_INIT_NTROMA01_CGenFF_VLSV
- 	- example file: NTROMA01_CGenFF_x_200K_init.gro
+ 	- example file: conf_x_200K.gro
      
 ## MD simulation parameters: *.mdp
    - **folder name**: MDP\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
@@ -28,7 +28,7 @@ The list of folders and files included is as below.
        grompp\_{XYZ}\_{TEMP}K.mdp
 
 	- example folder: MDP_NTROMA01_CGenFF_VLSV
- 	- example file: NTROMA01_CGenFF_x_200K_grompp.mdp
+ 	- example file: grommp_x_200K.mdp
 
 ## Topology inputs: *.topol, *.itp, *.ff
    - **folder name**: TOPOLOGY\_{REFCODE}\_{FORCEFIELD}
