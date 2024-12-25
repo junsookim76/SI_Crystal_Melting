@@ -1,0 +1,19 @@
+; NTROMA01_1_GMX_OPLS.top created by acpype (v: 2022.6.6) on Mon Oct 23 15:04:28 2023
+
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               3               yes             0.5     0.5
+
+; Include forcefield parameters
+;#include "oplsaa.ff/forcefield.itp"
+
+; Include NTROMA01_1_GMX.itp topology
+#include "AC07_LBCC.itp"
+
+[ system ]
+Acetic acid
+
+[ molecules ]
+; Compound        nmols
+MOL      3072 
