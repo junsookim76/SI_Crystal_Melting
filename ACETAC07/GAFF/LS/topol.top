@@ -1,0 +1,12 @@
+
+
+
+; Include itp topology
+#include "acooh01_GAFF0.itp"
+
+[ system ]
+Acetic acid
+
+[ molecules ]
+; Compound        nmols
+MOL       3072     
