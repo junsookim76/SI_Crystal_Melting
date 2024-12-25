@@ -1,0 +1,80 @@
+; ACETAC07_1molecule_GMX.itp created by acpype (v: 2022.6.6) on Tue Jun 11 16:05:01 2024
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+ oh       oh          0.00000  0.00000   A     3.24287e-01   3.89112e-01 ; 1.82  0.0930
+ ho       ho          0.00000  0.00000   A     5.37925e-02   1.96648e-02 ; 0.30  0.0047
+ o        o           0.00000  0.00000   A     3.04812e-01   6.12119e-01 ; 1.71  0.1463
+ c        c           0.00000  0.00000   A     3.31521e-01   4.13379e-01 ; 1.86  0.0988
+ c3       c3          0.00000  0.00000   A     3.39771e-01   4.51035e-01 ; 1.91  0.1078
+ hc       hc          0.00000  0.00000   A     2.60018e-01   8.70272e-02 ; 1.46  0.0208
+
+[ moleculetype ]
+;name            nrexcl
+ MOL            3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   oh     1   MOL    O1    1    -0.611100     16.00000 ; qtot -0.611
+     2   ho     1   MOL    H1    2     0.444000      1.00800 ; qtot -0.167
+     3    o     1   MOL    O2    3    -0.552000     16.00000 ; qtot -0.719
+     4    c     1   MOL    C1    4     0.636100     12.01000 ; qtot -0.083
+     5   c3     1   MOL    C2    5    -0.150100     12.01000 ; qtot -0.233
+     6   hc     1   MOL   H2A    6     0.077700      1.00800 ; qtot -0.155
+     7   hc     1   MOL   H2B    7     0.077700      1.00800 ; qtot -0.078
+     8   hc     1   MOL   H2C    8     0.077700      1.00800 ; qtot 0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    9.7250e-02    4.4811e+05 ;     O1 - H1    
+     1      4   1    1.3556e-01    3.0064e+05 ;     O1 - C1    
+     3      4   1    1.2190e-01    4.9421e+05 ;     O2 - C1    
+     4      5   1    1.5270e-01    1.9652e+05 ;     C1 - C2    
+     5      6   1    1.0962e-01    2.8891e+05 ;     C2 - H2A   
+     5      7   1    1.0962e-01    2.8891e+05 ;     C2 - H2B   
+     5      8   1    1.0962e-01    2.8891e+05 ;     C2 - H2C   
+
+[ pairs ]
+;   ai     aj    funct
+     1      6      1 ;     O1 - H2A   
+     1      7      1 ;     O1 - H2B   
+     1      8      1 ;     O1 - H2C   
+     2      3      1 ;     H1 - O2    
+     2      5      1 ;     H1 - C2    
+     3      6      1 ;     O2 - H2A   
+     3      7      1 ;     O2 - H2B   
+     3      8      1 ;     O2 - H2C   
+
+[ angles ]
+;   ai     aj     ak    funct   theta         cth
+     1      4      3      1    1.2209e+02    8.5379e+02 ;     O1 - C1     - O2    
+     1      4      5      1    1.1274e+02    6.4785e+02 ;     O1 - C1     - C2    
+     2      1      4      1    1.0654e+02    5.7287e+02 ;     H1 - O1     - C1    
+     3      4      5      1    1.2290e+02    6.3973e+02 ;     O2 - C1     - C2    
+     4      5      6      1    1.0895e+02    3.6510e+02 ;     C1 - C2     - H2A   
+     4      5      7      1    1.0895e+02    3.6510e+02 ;     C1 - C2     - H2B   
+     4      5      8      1    1.0895e+02    3.6510e+02 ;     C1 - C2     - H2C   
+     6      5      7      1    1.0773e+02    2.9957e+02 ;    H2A - C2     - H2B   
+     6      5      8      1    1.0773e+02    2.9957e+02 ;    H2A - C2     - H2C   
+     7      5      8      1    1.0773e+02    2.9957e+02 ;    H2B - C2     - H2C   
+
+[ dihedrals ] ; propers
+; for gromacs 4.5 or higher, using funct 9
+;    i      j      k      l   func   phase     kd      pn
+     1      4      5      6      9   180.00   0.00000   2 ;     O1-    C1-    C2-   H2A
+     1      4      5      7      9   180.00   0.00000   2 ;     O1-    C1-    C2-   H2B
+     1      4      5      8      9   180.00   0.00000   2 ;     O1-    C1-    C2-   H2C
+     2      1      4      3      9     0.00   7.94960   1 ;     H1-    O1-    C1-    O2
+     2      1      4      3      9   180.00   9.62320   2 ;     H1-    O1-    C1-    O2
+     2      1      4      5      9   180.00   7.53120   2 ;     H1-    O1-    C1-    C2
+     3      4      5      6      9     0.00  16.86152   1 ;     O2-    C1-    C2-   H2A
+     3      4      5      6      9   180.00  15.31344   2 ;     O2-    C1-    C2-   H2A
+     3      4      5      7      9     0.00  16.86152   1 ;     O2-    C1-    C2-   H2B
+     3      4      5      7      9   180.00  15.31344   2 ;     O2-    C1-    C2-   H2B
+     3      4      5      8      9     0.00  16.86152   1 ;     O2-    C1-    C2-   H2C
+     3      4      5      8      9   180.00  15.31344   2 ;     O2-    C1-    C2-   H2C
+
+[ dihedrals ] ; impropers
+; treated as propers in GROMACS to use correct AMBER analytical function
+;    i      j      k      l   func   phase     kd      pn
+     1      4      3      5      4   180.00   4.60240   2 ;     O1-    C1-    O2-    C2

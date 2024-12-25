@@ -1,0 +1,20 @@
+; ACETAC07_1molecule_GMX.top created by acpype (v: 2022.6.6) on Tue Jun 11 16:05:01 2024
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+; Include ACETAC07_1molecule_GMX.itp topology
+#include "ACETAC07.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_ACETAC07_1molecule.itp"
+#endif
+
+[ system ]
+ ACETAC07_1molecule
+
+[ molecules ]
+; Compound        nmols
+ MOL    3072     
