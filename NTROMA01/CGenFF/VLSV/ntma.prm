@@ -1,0 +1,20 @@
+
+[ bondtypes ]
+;      i        j  func           b0           kb
+   CG331    NG2O1     1   0.14800000    209200.00
+
+
+[ angletypes ]
+;      i        j        k  func       theta0       ktheta          ub0          kub
+   NG2O1    CG331     HGA3     5   108.000000   399.990400   0.00000000         0.00
+   CG331    NG2O1    OG2N1     5   117.000000   468.608000   0.00000000         0.00
+
+
+[ dihedraltypes ]
+;      i        j        k        l  func         phi0         kphi  mult
+    HGA3    CG331    NG2O1    OG2N1     9     0.000000     0.004184     6
+
+
+[ dihedraltypes ]
+; 'improper' dihedrals 
+;      i        j        k        l  func         phi0         kphi
