@@ -20,7 +20,7 @@ The list of folders and files included is as below.
   		VSV (for vapor/solid/vapor), CONTHEAT (for continuous heating)
 	- XYZ: x (for x-oriented systems) or y (for y-oriented systems), or z (for z-oriented systems)
 	- TEMP: temperature values within the ranges considered in our publication
-	- TIME: simulations time 
+	- TIME: simulatio times within the durations considered in our publication
 
 	- example folder: NTROMA01_CGenFF_VLSV
  	- example file: conf_x_200K.gro
