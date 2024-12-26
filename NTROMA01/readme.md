@@ -81,11 +81,14 @@ Below is a summary of the folder and file structure used in this repository.
 
 ### **Representative Movies**
 
+#### **Folder name**: `NTROMA01_MOVIES`
+#### **File name**:  
+    - CGenFF_SL_X_{TEMP}K.mpg  
+
 - **Crystal Growth and Melting Using CGenFF (Solid/Liquid)**  
-- **Folder name**:  
-  `MOVIES`
-- **File name**:  
-  `CGenFF_SL_X_{TEMP}K.mpg`
+
+
+
 
 > **Note**:  
 > "QuickTime Player" on macOS may have difficulty playing these movie files.  
