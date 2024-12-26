@@ -8,50 +8,53 @@
 
 The list of folders and files included is as below.
 ## Configuration files for GROMACS simulations: *.gro
-   - **folder name**: CONFIG\_INIT\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
+   - **folder name**: {REFCODE}\_{FORCEFIELD}\_{SYSTEM}
    - **file name**:
        conf\_{XYZ}\_{TEMP}K.gro
-
+   - **file name for CONTHEAT**:
+       conf\_{XYZ}\_{TIME}ps.gro
+     
 	- REFCODE: NTROMA01 (for nitromethane) or ACETAC07 (for acetic acid)
-	- FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS 1.14*CM1A, OPLS 1.14*CM1A-LBCC
+	- FORCEFIELD: CGenFF, GAFF, GAFF2, OPLS_CM1A (for OPLS 1.14*CM1A), OPLS_LBCC (for OPLS 1.14*CM1A-LBCC)
  	- SYSTEM: S (for solid alone), LS (for liquid/solid), VLSV (for vapor/liquid/solid/vapor), 
   		VSV (for vapor/solid/vapor), CONTHEAT (for continuous heating)
 	- XYZ: x (for x-oriented systems) or y (for y-oriented systems), or z (for z-oriented systems)
 	- TEMP: temperature values within the ranges considered in our publication
+	- TIME: simulations time 
 
-	- example folder: CONFIG_INIT_NTROMA01_CGenFF_VLSV
+	- example folder: NTROMA01_CGenFF_VLSV
  	- example file: conf_x_200K.gro
      
 ## MD simulation parameters: *.mdp
-   - **folder name**: MDP\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
    - **file name**:
        grompp\_{XYZ}\_{TEMP}K.mdp
 
-	- example folder: MDP_NTROMA01_CGenFF_VLSV
  	- example file: grommp_x_200K.mdp
 
 ## Topology inputs: *.topol, *.itp, *.ff
-   - **folder name**: TOPOLOGY\_{REFCODE}\_{FORCEFIELD}
    - **file name for CGenFF NTROMA01**:
    - topol.top / ntma.itp / ntma.prm / charmm36-jul2022.ff
    - **file name for CGenFF ACETAC07**:
    - topol.top / charmm36.ff
-   - **file name for GAFF**:
-   - topol.top / gaff.itp 
-   - **file name for GAFF2**:
-   - topol.top / gaff2.itp   
-   - **file name for OPLS 1.14*CM1A**:
-   - topol.top / opls_cm1a.itp
-   - **file name for OPLS 1.14*CM1A-LBCC**:
-   - topol.top / opls_lbcc.itp
-     
-## Energy outputs for calculation of potential energy: *.edr 
-   - **folder name**: ENER\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
-   - **file name**:
-       ener\_{XYZ}\_{TEMP}K.edr
+   - **file name for GAFF NTROMA01**:
+   - topol.top / NTRIMA01_SINGLE_GMX_gaff.itp
+   - **file name for GAFF ACETAC07**:
+   - topol.top / acooh01_GAFF0.itp
+   - **file name for GAFF2 NTROMA01**:
+   - topol.top / NTMA_GAFF2.itp
+   - **file name for GAFF2 ACETAC07**:
+   - topol.top / ACETAC07.itp
+   - **file name for OPLS 1.14*CM1A NTROMA01**:
+   - topol.top / nitromethane_1.itp
+   - **file name for OPLS 1.14*CM1A ACETAC07**:
+   - topol.top / AC07_CM1A.itp
+   - **file name for OPLS 1.14*CM1A-LBCC NTROMA01**:
+   - topol.top / nitromethane_1.itp
+   - **file name for OPLS 1.14*CM1A-LBCC ACETAC07**:
+   - topol.top / AC07_LBCC.itp
+
 
 ## Potential energy as a function of time: *.xvg 
-   - **folder name**: POTENER\_{REFCODE}\_{FORCEFIELD}\_{SYSTEM}
    - **file name**:
        potener\_{XYZ}\_{TEMP}K.xvg
 
