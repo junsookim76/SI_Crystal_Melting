@@ -4,11 +4,8 @@ Below is a summary of the folder and file structure used in this repository.
 
 ---
 
-### **Folder name**: `{REFCODE}_{FORCEFIELD}_{SYSTEM}`
+### **Folder name**: `{FORCEFIELD} > {SYSTEM}`
 
-- **REFCODE**:  
-        - `NTROMA01` (for nitromethane)  
-        - `ACETAC07` (for acetic acid)
 - **FORCEFIELD**:  
         - `CGenFF`, `GAFF`, `GAFF2`, `OPLS 1.14*CM1A`, `OPLS 1.14*CM1A-LBCC`
 - **SYSTEM**:  
