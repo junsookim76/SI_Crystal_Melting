@@ -13,7 +13,9 @@ The list of folders and files included is as below.
 ### NTROMA01: GROMACS inputs for nitromethane
 ### ACETAC07: GROMACS inputs for acetic acid
 
-#### **List of force fields**: `CGenFF`, `GAFF`, `GAFF2`, `OPLS 1.14\*CM1A`, `OPLS 1.14\*CM1A-LBCC`
+---
+
+#### **List of force fields**: `CGenFF`, `GAFF`, `GAFF2`, `OPLS 1.14*CM1A`, `OPLS 1.14*CM1A-LBCC`
 
 #### **List of files**:  .gro, .mdp, .itp, .top, .xvg
     - Initial configuration: .gro
