@@ -28,6 +28,8 @@ The list of folders and files included is as below.
 ## MD simulation parameters: *.mdp
    - **file name**:
        grompp\_{XYZ}\_{TEMP}K.mdp
+   - **file name for CONTHEAT**:
+       grompp\_{XYZ}\_{TIME}ps.mdp
 
  	- example file: grommp_x_200K.mdp
 
@@ -57,6 +59,8 @@ The list of folders and files included is as below.
 ## Potential energy as a function of time: *.xvg 
    - **file name**:
        potener\_{XYZ}\_{TEMP}K.xvg
+   - **file name for CONTHEAT**:
+       potener\_{XYZ}\_{TIME}ps.xvg
 
 ## Representative Movies: 
 
