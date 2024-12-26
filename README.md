@@ -67,6 +67,6 @@ The list of folders and files included is as below.
    - Crystal Growth and Melting Using CGenFF (Solid/Liquid)
    - **folder name**: MOVIES
    - **file name**:
-       potener\_{XYZ}\_{TEMP}K.xvg
+       CGenFF\_{SL}\_{X}\_{TEMP}K.mpg
 
     - We've observed that "QuickTime Player" on Mac might encounter difficulties in playing the movies. We suggest experimenting with alternative media players, such as GOM Player or VLC Media Player.
