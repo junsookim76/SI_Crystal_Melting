@@ -88,7 +88,7 @@ Below is a summary of the folder and file structure used in this repository.
 - **Crystal Growth and Melting Using CGenFF (Solid/Liquid)**  
 
 
-
+---
 
 > **Note**:  
 > "QuickTime Player" on macOS may have difficulty playing these movie files.  
