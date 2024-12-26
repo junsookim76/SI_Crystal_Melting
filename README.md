@@ -10,8 +10,8 @@ The list of folders and files included is as below.
 
 ---
 
-### NTROMA01: GROMACS inputs for nitromethane
-### ACETAC07: GROMACS inputs for acetic acid
+#### NTROMA01: GROMACS inputs for nitromethane
+#### ACETAC07: GROMACS inputs for acetic acid
 
 ---
 
