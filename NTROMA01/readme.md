@@ -23,7 +23,7 @@ Below is a summary of the folder and file structure used in this repository.
 
 #### **File name**: 
     - conf_{XYZ}_{TEMP}K.gro
-    - conf_{XYZ}_{TIME}ps.gro (for **CONTHEAT**)
+    - conf_{XYZ}_{TIME}ps.gro (for CONTHEAT)
 
 - **XYZ**:  
         - `x`, `y`, `z` (for different orientations)
@@ -37,7 +37,7 @@ Below is a summary of the folder and file structure used in this repository.
 
 #### **File name**:  
     - grompp_{XYZ}_{TEMP}K.mdp  
-    - grompp_{XYZ}_{TIME}ps.mdp (for **CONTHEAT**)
+    - grompp_{XYZ}_{TIME}ps.mdp (for CONTHEAT)
 
 #### **Example file**:  
     - grommp_x_200K.mdp
@@ -53,13 +53,21 @@ Below is a summary of the folder and file structure used in this repository.
 - **File name for CGenFF ACETAC07**  
   `topol.top / charmm36.ff`
 - **File name for GAFF NTROMA01**  
-  `topol.top / gaff.itp`
-- **File name for GAFF2**  
-  `topol.top / gaff2.itp`
-- **File name for OPLS 1.14*CM1A**  
-  `topol.top / opls_cm1a.itp`
-- **File name for OPLS 1.14*CM1A-LBCC**  
-  `topol.top / opls_lbcc.itp`
+  `topol.top / NTROMA01_SINGLE_GMX_gaff.itp`
+- **File name for GAFF ACETAC07**   
+  `topol.top / acooh01_GAFF0.itp`   
+- **File name for GAFF2 NTROMA01**  
+  `topol.top / NTMA_GAFF2.itp`   
+- **File name for GAFF2 ACETAC07**   
+  `topol.top / ACETAC07.itp`   
+- **File name for OPLS 1.14*CM1A NTROMA01**   
+  `topol.top / nitromethane_1.itp`   
+- **File name for OPLS 1.14*CM1A ACETAC07**   
+  `topol.top / AC07_CM1A.itp`   
+- **File name for OPLS 1.14*CM1A-LBCC NTROMA01**  
+  `topol.top / nitromethane_1.itp`   
+- **File name for OPLS 1.14*CM1A-LBCC ACETAC07**   
+  `topol.top / AC07_LBCC.itp`
 
 
 ---
@@ -77,7 +85,7 @@ Below is a summary of the folder and file structure used in this repository.
 - **Folder name**:  
   `MOVIES`
 - **File name**:  
-  `CGenFF_SL_x_{TEMP}K.xvg`
+  `CGenFF_SL_X_{TEMP}K.mpg`
 
 > **Note**:  
 > "QuickTime Player" on macOS may have difficulty playing these movie files.  
