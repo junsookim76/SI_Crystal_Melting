@@ -4,7 +4,9 @@
 >
 >for "Melting point prediction of organic crystals using direct molecular dynamics simulations" 
 >
->by Chi, Han, Won, and Kim (2025)
+>by Chi, Han, Won, and Kim, Crystal Growth & Design (2025)
+>
+>https://doi.org/10.1021/acs.cgd.4c01753 
 
 The list of folders and files included is as below.  
 
